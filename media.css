@@ -1,0 +1,65 @@
+@media screen and (max-width:768px) {
+
+.my-main-pic{
+  height: 200px;
+  width: 200px;
+}
+
+  .navlinks {
+    display: none;
+  }
+
+
+  .container p {
+    font-size: 2rem;
+  }
+
+  #whyme .right-topic li {
+
+    font-size: 1rem;
+  }
+
+  #about p {
+    font-size: medium;
+    margin: 2%;
+    font-weight: 400;
+  }
+
+  .right-topic {
+    margin: 2% 0;
+  }
+}
+
+
+@media screen and (max-width:1224px) {
+  
+  #navbar {
+    display: none;
+  }
+  #hamburger-nav{
+    display: flex;
+   }
+  .container {
+    min-width: fit-content;
+    flex-wrap: wrap;
+  }
+
+  .right-topic {
+    width: 100%;
+  }
+
+  .knowladge-topic-container {
+    margin: 2% 1%;
+  }
+
+  .heading {
+    margin-bottom: 5vh;
+  }
+  section {
+    width: fit-content;
+    margin: 0 auto;
+    height: 70vh;
+  }
+
+
+}

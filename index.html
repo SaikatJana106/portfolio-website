@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1>Saikat Jana</h1>
+        <ul class="navlinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Knowladge">Knowladge</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#whyme">Why Me?</a></li>
+            <li><a href="#Contactme">Contact</a></li>
+        </ul>
+
+    </nav>
+    <nav id="hamburger-nav">
+        <h1>Saikat Jana</h1>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon">
+                <img class="menu" onclick="toggleMenu()" style="height: 40px;" src="./media/menu.png" alt="Menu Icon">
+                <img class="close" onclick="toggleMenu()" style="height: 40px; display: none;" src="./media/close.png" alt="Close Icon">
+            </div>
+            <div class="menulinks">
+                <ul class="hamburger-navlinks">
+                    <li><a onclick="toggleMenu()" href="#about">About</a></li>
+                    <li><a onclick="toggleMenu()" href="#Knowladge">Knowladge</a></li>
+                    <li><a onclick="toggleMenu()" href="">Projects</a></li>
+                    <li><a onclick="toggleMenu()" href="#whyme">Why Me?</a></li>
+                    <li><a onclick="toggleMenu()" href="#Contactme">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home">
+        <div class="container">
+
+            <img class="my-main-pic" src="../media/me.png" alt="">
+
+
+            <div class="right-topic">
+                <h2>Hi,</h2>
+                <h1>I'am <span>Saikat</span></h1>
+                <p>Web Developer</p>
+                <button onclick="window.open('./')">Donwnload CV</button>
+                <div>
+                    <img onclick="location.href('./')" class="linkedin-pic" src="../media/me.jpg" alt="">
+                    <img onclick="location.href('./')" class="github-pic" src="../media/me.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="heading">
+            <p>Get to know more</p>
+            <h1>About Me</h1>
+        </div>
+        <div class="container">
+            <img class="my-main-pic" src="../media/me2.jpg" alt="">
+            <div class="right-topic">
+                <div class="about-right-section">
+                    <div class="experience">
+                        <img src="./media/exp (2).png" alt="">
+                        <h3>Experience</h3>
+                        <p>1+ year</p>
+                        <span>MERN stack developer</span>
+                    </div>
+                    <div class="education">
+                        <img src="./media/education.png" alt="">
+                        <h3>Education</h3>
+                        <span>B.Voc</span>
+                        <span>Software Development</span>
+                        <span>8.75 cgpa</span>
+                    </div>
+
+                </div>
+                <p style="padding:0 2rem;">Hi! I’m <span class="name">Saikat Jana</span>, a passionate Web Developer with a knack for creating
+                    functional and visually
+                    appealing websites. I specialize in front-end and full-stack development, working with technologies
+                    like React, Node.js, MongoDB, and more.
+                    Let’s build something amazing together! </p>
+            </div>
+        </div>
+
+    </section>
+    <section id="Knowladge">
+        <div class="heading">
+            <p>Explore my</p>
+            <h1>Knowladge</h1>
+        </div>
+        <div class="knowladge-container">
+            <div class="knowladge-topic-container">
+                <h1>Frontend Development</h1>
+                <div class="knowladge-topic">
+                    <img src="./media/tick.png" alt="">
+                    <div>
+                        <h4>HTML</h4>
+                        <span>Experienced</span>
+                    </div>
+
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/tick.png" alt="">
+                    <div>
+                        <h4>CSS</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/tick.png" alt="">
+                    <div>
+                        <h4>React.js</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/tick.png" alt="">
+                    <div>
+                        <h4>Tailwind Css/Bootstrap/MUI</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+            </div>
+            <div class="knowladge-topic-container">
+                <h1>Backend Development</h1>
+                <div class="knowladge-topic">
+                    <img src="./media/code.png" alt="">
+                    <div>
+                        <h4>JS</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/code.png" alt="">
+                    <div>
+                        <h4>Node.JS</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/code.png" alt="">
+                    <div>
+                        <h4>Python</h4>
+                        <span>Intemidiet</span>
+                    </div>
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/code.png" alt="">
+                    <div>
+                        <h4>Java</h4>
+                        <span>Intemidiet</span>
+                    </div>
+                </div>
+            </div>
+            <div class="knowladge-topic-container">
+                <h1>Database&Others</h1>
+                <div class="knowladge-topic">
+                    <img src="./media/db.png" alt="">
+                    <div>
+                        <h4>SQL</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/db.png" alt="">
+                    <div>
+                        <h4>MongoDB</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+                <div class="knowladge-topic">
+                    <img src="./media/db.png" alt="">
+                    <div>
+                        <h4>My SQL</h4>
+                        <span>Experienced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="whyme">
+        <div class="heading">
+            <h1>Why choose Me?</h1>
+        </div>
+        <div class="container">
+            <img class="my-main-pic" src="./media/me.jpg" alt="">
+            <div class="right-topic">
+                <ul>
+                    <li>I don't complain</li>
+                    <li>Hard working & learning personality</li>
+                    <li>If i don't know i will learn for company</li>
+                    <li>Experience with MERN stack</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="Contactme">
+        <div class="heading">
+            <p>Get In Touch</p>
+            <h1>Contact Me</h1>
+        </div>
+        <div class="email">
+            <span>saikatjana123890@gmail.com</span>
+            <img src="./media/mail.png" alt="">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

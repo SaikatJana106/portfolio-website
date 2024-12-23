@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+img{
+    object-fit: cover;
+}
+
+#navbar,
+.navlinks,
+#hamburger-nav {
+    display: flex;
+}
+
+#navbar,
+#hamburger-nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.navlinks, .hamburger-navlinks  {
+    list-style: none;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+
+}
+
+a,
+p,
+span,
+h1,
+h2,
+li {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins"
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    height: 96vh;
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+
+}
+
+/* home */
+
+
+.right-topic {
+    justify-items: center;
+    width: 50%;
+}
+
+/* home */
+.my-main-pic {
+
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    border-radius: 100%;
+}
+
+.linkedin-pic,
+.github-pic {
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    gap: 10rem;
+}
+
+.container h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.container p {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+}
+
+#home span {
+    color: rgb(128, 87, 231);
+    font-weight: bold;
+}
+
+.container button {
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+/* about */
+.experience,
+.education {
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#about .about-right-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .about-right-section img {
+    height: 30px;
+    width: auto;
+    flex-grow: unset;
+}
+
+#about p {
+    font-size: 1.5rem;
+
+}
+
+#about h3,
+.name {
+    color: rgb(125, 78, 246);
+}
+
+/* Knowladge */
+.knowladge-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#Knowladge img {
+    height: 40px;
+    width: 40px;
+}
+
+.knowladge-topic {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.knowladge-topic-container {
+    border: 1px solid gray;
+    padding: 1rem;
+
+}
+
+/* why me */
+#whyme li {
+    font-size: 1.5rem;
+}
+#Contactme{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .email
+  {
+    border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius:50px 50px ;
+  width: fit-content;
+  }
+  .email img{
+    width: 20px;
+    height: 20px;
+  }
+
+  #hamburger-nav{
+    display: none;
+    position: relative;
+  }
+  .menulinks {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    right: 0;
+}
+
+.menulinks.open {
+    display: flex; /* Display menu when open */
+}
+
+.menu {
+    display: block; /* Show menu icon initially */
+}
+
+
+
+.hamburger-icon.open .menu {
+    display: none; /* Hide menu icon when open */
+}
+
+.hamburger-icon.open .close {
+    display: block; /* Show close icon when open */
+}
